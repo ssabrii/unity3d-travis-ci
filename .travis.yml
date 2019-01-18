@@ -13,6 +13,7 @@ cache:
 
     
 before_install:
+- curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 - rvm get stable
 - chmod a+x ./travis-build/*.sh
 
